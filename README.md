@@ -128,7 +128,7 @@ My first jQuery pager document
             var $prevIndex = $li.filter(":visible").index();
             if($prevIndex<8){
                 $prevIndex+=1;
-                $(".box ul li").eq($prevIndex).show().siblings().hide();
+                $li.eq($prevIndex).show().siblings().hide();
                 $btn.eq($prevIndex).addClass("selected")
                         .siblings().removeClass("selected")
             }else{
